@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My 3D Animation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style src=""style.css></style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='navScript.js')}}"></script>
+
+  </head>
+  <body>
+    <div id="top-bar">
+      <a href="index.html">
+          <h1>Mocap</h1>
+          <h1>Animation</h1>
+        </a>
+    </div>
+    <div id="content">
+      <div id="container">
+        
+        <div class="file-list"> 
+          <a href ="reading.html"><h3>Your Files :</h3></a>
+          <ul class="sous-menu" id="file-list">
+                      
+          </ul>
+        </div>
+      </div>
+      <div class="canvas-div">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/controls/OrbitControls.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+  </body>
+  </html>

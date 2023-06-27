@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Uploader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='navScript.js')}}"></script>
+</head>
+<body>
+    <div id="top-bar">
+        <a href="index.html">
+            <h1>Home</h1>
+            <h1>Page</h1>
+        </a>
+    </div>
+
+    <br><br>
+
+    <div id="content">
+
+        <div class="file-list"> 
+            <div class="file-list-title">
+                <a href ="reading.html"><h1>Your Files :</h1></a>
+            </div>
+            <ul class="sous-menu" id="file-list">
+                
+            
+                        
+            </ul>
+                
+
+        </div>
+        <div class="container">
+            <h1>Video Uploader</h1>
+            <form method="post" enctype="multipart/form-data" action="{{ url_for('home')}}">
+                {{form.hidden_tag()}}
+                <div class="title-input-div">
+                    <label class="label-title" for="title">Video title</label>
+                    {{form.title(class='title-input')}}
+                </div>
+
+                <br>
+                <br>
+
+                <div class="file-input-div">
+                    <label class="label-file" for="file">Your video file (.mp4 only)</label>
+                    {{form.file(class='file-input')}}
+                </div>
+
+                <br>
+                <br>
+
+                <div class="submit-div">
+                    <label class="label-file" for="submit">Submit</label>
+                    {{form.submit(class='submit')}}
+                </div>
+            </form>
+            
+            
+            <br>
+        </div>
+
+    </div>
+</body>
+</html>

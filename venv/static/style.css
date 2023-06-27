@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Narwa Bold';
+    src: url(fonts/Narwa-BoldTRIAL.otf);
+}
+@font-face {
+    font-family: 'Nostra';
+    src: url(fonts/Nostra-SettTrial.otf);
+}
+
+body {
+    font-family: 'Narwa Bold';
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+
+  div#top-bar{
+    font-family: 'Nostra', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+    width: fit-content;
+    padding: 1px 10px;
+    font-size: xx-large;
+  }
+
+  h1{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a, a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+div#content{
+    display: flex;
+  
+}
+
+div.file-list{
+    width: 100%;
+    max-width: 400px;
+    margin-left: 5px; 
+    border-right: solid 7px #ffffff;
+}
+.sous-menu{
+    width:100%;
+}
+
+div.container{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+form{
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+input[type="text"] {
+    width: 200px;
+    border: 2px solid var(--secondary-color);
+    padding: 8px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 4px;
+  }
+
+  .title-input-div label {
+    display: block;
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-top: 8px;
+  }
+
+  input[type="text"]:focus {
+    border: 0px;
+    border-right: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+    outline: none;
+    border-radius: 0px;
+    background-color: var(--soft-secondary);
+  }
+
+  #file, #submit {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+    
+  }
+
+  .file-list-elem{
+    display: flex;
+  }
+
+  .file-list-elem-button{
+    border: none;
+    display: block;
+    position: relative;
+    width: 175.3px;
+    height: 38.55px;
+    border-right: solid #000000;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+
+  }
+
+  .file-input-div label {
+    
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 219.3px;
+    height: 38.55px;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+  }
+
+  .file-list-del-button{
+    border: none;
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 38.55px;
+    background: var(--soft-secondary);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+
+  }
+
+  .canvas-div{
+    margin: 0 auto;
+
+  }
+  
+  .submit-div label{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 219.3px;
+    height: 38.55px;
+    border-radius: 5px;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+  }
+
+  .submit-div label:hover{
+    background: var(--secondary-color);
+
+  }
+  .file-list-title{
+    width: 100%;
+  }
+
+
+
+  
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --soft-secondary: #dadada8f;
+  }

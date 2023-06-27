@@ -1,0 +1,5 @@
+flask
+opencv-python
+cvzone
+mediapipe
+flask_wtf  
